@@ -1,6 +1,5 @@
 package ArrayList;
 
-import java.sql.SQLOutput;
 import java.util.*;
 
 public class LearnLists {
@@ -16,9 +15,9 @@ public class LearnLists {
         list.add(1);
         list.add(1);
 
-//        list2.add(20);
-//        list2.add(10);
-//        list2.add(80);
+        list2.add(20);
+        list2.add(10);
+        list2.add(80);
 
 
         System.out.println(list);
@@ -32,16 +31,8 @@ public class LearnLists {
 
 
 
+       // Object a[] = list.toArray();
 
-
-
-/*   ------- Collections method ----------------
-        Object a[] = list.toArray();
-        for(Object e: a)
-        {
-            Integer temp = (Integer) e ;
-            System.out.println(e);
-        }
         System.out.println(list);
         System.out.println(list2);
         list2.clear();
@@ -51,7 +42,7 @@ public class LearnLists {
         System.out.println(list.size());
         System.out.println(list.contains(20));
         list.remove(1);
-        System.out.println(list); */
+        System.out.println(list);
 
     }
 }
