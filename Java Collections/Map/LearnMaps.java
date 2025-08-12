@@ -18,7 +18,12 @@ public class LearnMaps {
         System.out.println(values);
 
         Set<Map.Entry<String, String>> entries = map.entrySet();
-        System.out.println(entries);
+//        System.out.println(entries);
+
+        for(Map.Entry<String, String> entry: entries)
+        {
+            System.out.println(entry.getKey()+", "+ entry.getValue());
+        }
 
 //        System.out.println(map.containsValue("india"));
 //        System.out.println(map.get("in"));
