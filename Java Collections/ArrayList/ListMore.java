@@ -30,13 +30,6 @@ public class ListMore {
         System.out.println("Iterator " + fruits.subList(1,4));
 
 
-        Queue<Integer> q = new LinkedList<>();
-        q.offer(10);
-        q.offer(20);
-        q.offer(30);
-        q.offer(40);
-        q.offer(60);
-        System.out.println(q);
-        System.out.println(q.poll());
+
     }
 }
