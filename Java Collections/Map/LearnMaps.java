@@ -7,11 +7,20 @@ public class LearnMaps {
         Map<String,String> map = new HashMap<>();
         map.put("us","United States");
         map.put("in","india");
+        map.put("mn","india");
         map.putIfAbsent("en","england"); //in modifies
+        map.remove("us","usa");
 
-        System.out.println(map.get("in"));
-        System.out.println(map.containsKey("in"));
-        System.out.println(map);
-        System.out.println(map.getOrDefault("gn","others"));
+        ArrayList<String> keys = new ArrayList(map.keySet());
+        System.out.println(keys);
+
+        Collection<String> values = map.values();
+        System.out.println(values);
+
+//        System.out.println(map.containsValue("india"));
+//        System.out.println(map.get("in"));
+//        System.out.println(map.containsKey("in"));
+//        System.out.println(map.getOrDefault("gn","others"));
+//        System.out.println(map);
     }
 }
