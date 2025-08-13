@@ -11,7 +11,9 @@ public class ArrayListPractice {
         list.add(1);
         list.add(4);
         list.add(3);
-        Collections.sort(list);
+//        Collections.sort(list);
+
+        list.sort(null);
         System.out.println(list);
 
     }
