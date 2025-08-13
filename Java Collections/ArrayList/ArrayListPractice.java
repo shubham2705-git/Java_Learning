@@ -23,7 +23,6 @@ class Student{
     public String getName() {
         return name;
     }
-
     public int getGpa() {
         return gpa;
     }
