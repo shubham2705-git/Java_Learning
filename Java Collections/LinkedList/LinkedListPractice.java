@@ -13,11 +13,11 @@ public class LinkedListPractice{
         linkedList.addLast(5);  //O(1)
         linkedList.addFirst(42);   //O(1)
 
-        System.out.println(linkedList.get(4));  // O(n)
-
-        System.out.println(linkedList.getLast());
-
-        System.out.println(linkedList.getFirst());
+//        System.out.println(linkedList.get(4));  // O(n)
+//
+//        System.out.println(linkedList.getLast());
+//
+//        System.out.println(linkedList.getFirst());
 
         linkedList.removeFirst();
         linkedList.removeLast();
@@ -26,7 +26,7 @@ public class LinkedListPractice{
 
         linkedList.removeIf(x -> x % 2 == 0);
 
-        System.out.println(linkedList);
+//        System.out.println(linkedList);
 
         LinkedList<String> animals = new LinkedList<>(Arrays.asList("cat","horse","dog"));
         LinkedList<String> animals2 = new LinkedList<>(Arrays.asList("cat","Lion","dog"));
