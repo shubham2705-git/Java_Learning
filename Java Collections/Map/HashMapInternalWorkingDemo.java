@@ -8,6 +8,6 @@ public class HashMapInternalWorkingDemo {
         System.out.println(fruitMap);
 
         fruitMap.replaceAll((k,v)->v*2);
-        System.out.println(fruitMap);
+        System.out.println(fruitMap); System.out.println(fruitMap);
     }
 }
