@@ -13,7 +13,7 @@ public class SortedMapDemo {
 
         System.out.println(map.firstKey());
         System.out.println(map.lastKey());
-        System.out.println(map.headMap(91));
-        System.out.println(map.tailMap(91));
+        System.out.println(map.headMap(91)); //exclude 91
+        System.out.println(map.tailMap(91));  // include 91
     }
 }
