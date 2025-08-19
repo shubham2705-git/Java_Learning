@@ -1,4 +1,4 @@
-package CopyOnWriteArrayList;
+package ArrayList;
 
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
