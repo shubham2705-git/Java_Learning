@@ -15,5 +15,11 @@ public class LinkedHashMapDemo {
             System.out.println(entry.getKey()+":" + entry.getValue());
         }
 
+        HashMap<String,Integer> hashMap = new HashMap<>();
+        hashMap.put("shubham", 10);
+        LinkedHashMap linkedHashMap1 = new LinkedHashMap(hashMap);
+
+        System.out.println(linkedHashMap1);
+        System.out.println(hashMap);
     }
 }
