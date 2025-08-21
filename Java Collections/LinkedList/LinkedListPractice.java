@@ -11,6 +11,7 @@ public class LinkedListPractice{
         linkedList.add(8);
         linkedList.add(7);
         linkedList.add(8);
+        linkedList.add(8);
 
 //        linkedList.add(7);
         linkedList.addLast(5);  //O(1)
