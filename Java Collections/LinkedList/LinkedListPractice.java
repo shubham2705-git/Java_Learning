@@ -24,6 +24,9 @@ public class LinkedListPractice{
 
         linkedList.removeFirst();
         linkedList.removeLast();
+        linkedList.removeLast();
+        linkedList.removeLast();
+
 
 //        System.out.println(linkedList);
 
