@@ -10,5 +10,7 @@ public class DequeDemo {
         deque.addLast(20);
 
         System.out.println(deque);  // [5, 10, 20]
+        System.out.println(deque);  // [5, 10, 20]
+
     }
 }
