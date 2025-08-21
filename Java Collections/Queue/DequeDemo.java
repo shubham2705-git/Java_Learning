@@ -1,12 +1,14 @@
-package Queue;
-
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class DequeDemo {
     public static void main(String[] args) {
-        Deque<Integer> deque1 = new ArrayDeque<>(); //faster iteration, low memory, no null allowed
-        // ArrayDeque -> circular , head and tail
-        Deque<Integer> deque2 = new LinkedList<>(); // slower than ArrayDeque
+        Deque<Integer> deque = new ArrayDeque<>();
 
+        deque.add(10);
+        deque.addFirst(5);
+        deque.addLast(20);
+
+        System.out.println(deque);  // [5, 10, 20]
     }
 }
