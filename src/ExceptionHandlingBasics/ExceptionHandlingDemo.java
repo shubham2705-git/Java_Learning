@@ -1,4 +1,4 @@
-package ExceptionHandlingBasics;
+package src.ExceptionHandlingBasics;
 
   class ExceptionHandlingDemo {
     public static void main(String[] args) {
