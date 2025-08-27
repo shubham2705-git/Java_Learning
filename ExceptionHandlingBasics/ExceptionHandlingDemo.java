@@ -16,6 +16,7 @@ package ExceptionHandlingBasics;
          }catch (ArithmeticException e)
          {
              System.out.println(e);
+             System.out.println(e);
              return -1;
          }
         }
