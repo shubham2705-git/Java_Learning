@@ -13,12 +13,7 @@ public class UnionOfTwoSortedArrays {
         for(int i : arr2){
             set.add(i);
         }
-        int[] ans = new int[set.size()];
-        int count = 0;
-        for(int i : set){
-            ans[count++] = i ;
-        }
-        return ans;
+        return set.stream().mapToInt(Integer::intValue).toArray();
     }
     public static void main(String[] args) {
         int[] arr1 = {1,1,2,3,4,5,8,8,9,10};
