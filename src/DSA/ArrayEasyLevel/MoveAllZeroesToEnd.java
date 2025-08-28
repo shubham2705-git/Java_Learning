@@ -13,6 +13,7 @@ public class MoveAllZeroesToEnd {
                 break;
             }
         }
+        if (j == -1) return arr;
         for(int i=j+1; i<n; i++){   //--- TC -> O(n)
             if(arr[i] != 0){
                  int temp = arr[i];
