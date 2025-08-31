@@ -11,7 +11,7 @@ public class CountNumberOfCharacters {
     }
 
     public static void main(String[] args) {
-        String s = "  the sky is blue     ";
+        String s = "Hello  Worlds ";
         int result = countChar(s);
         System.out.println(result);
     }
