@@ -2,11 +2,13 @@ package StringZeroToHero;
 
 public class PalindromeString {
     public static boolean palindromeString(String s){
-        String reverse="";
-        for(int i=s.length()-1;i>=0;i--){
-            reverse+=s.charAt(i);
-        }
-        return reverse.toLowerCase().equals(s.toLowerCase());
+        boolean ans= s.equalsIgnoreCase(new StringBuilder(s).reverse().toString());
+        return ans;
+//        String reverse="";
+//        for(int i=s.length()-1;i>=0;i--){
+//            reverse+=s.charAt(i);
+//        }
+//        return reverse.toLowerCase().equals(s.toLowerCase());
 
 // ------------ Optimal Solution ----------------------
 //        String lower = s.toLowerCase();
@@ -14,7 +16,7 @@ public class PalindromeString {
 //        return lower.equals(reversed);
     }
     public static void main(String[] args) {
-        String s = "eleesBSeele" ;
+        String s = "leesBSeele" ;
         boolean result = palindromeString(s);
         System.out.println(result);
     }
