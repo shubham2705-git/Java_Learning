@@ -19,5 +19,6 @@ public class TwoSum {
         int target = 14;
         int[] result = twoSum(arr,target);
         System.out.println(Arrays.toString(result));
+        System.out.println(Arrays.toString(result));
     }
 }
