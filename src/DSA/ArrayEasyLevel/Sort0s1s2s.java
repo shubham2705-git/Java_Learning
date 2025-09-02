@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class Sort0s1s2s {
     public static int[] sort012(int[] arr){
+        if (arr == null || arr.length == 0) return arr;
         int left=0;
         int mid=0;
         int right=arr.length-1;
