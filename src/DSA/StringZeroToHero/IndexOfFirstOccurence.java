@@ -19,3 +19,5 @@ public class IndexOfFirstOccurence {
         System.out.println(index);
     }
 }
+//========== Optimal Approach ===============
+/*   return haystack.indexOf(needle); */
