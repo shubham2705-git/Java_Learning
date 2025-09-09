@@ -1,8 +1,6 @@
-package ArrayEasyLevel;
+package ArrayMediumLevel;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 public class TwoSum {
     public static int[] twoSum(int[] arr,int target){
