@@ -1,4 +1,4 @@
-package ArrayEasyLevel;
+package ArrayMediumLevel;
 
 public class BestTimeToBuyAndSellStocks {
     public static int bestTime(int[] arr){
