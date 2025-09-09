@@ -1,4 +1,4 @@
-package ArrayEasyLevel;
+package ArrayMediumLevel;
 
 public class KadansAlgorithm {
     public static int maxSubarray(int[] arr){
