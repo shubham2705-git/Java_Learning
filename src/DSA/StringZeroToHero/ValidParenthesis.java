@@ -7,17 +7,18 @@ public class ValidParenthesis {
                 s=s.replace("()","");
             }
             else if(s.contains("{}")){
-                s=s.replace("{}","")
+                s=s.replace("{}","");
             }
             else if(s.contains("[]")){
                 s=s.replace("[]","");
             }
-
+            else{
+                return s.isEmpty();
+            }
         }
-
     }
     public static void main(String[] args) {
-        String s = "()";
+        String s = "([]][)";
         boolean result = validParen(s);
         System.out.println(result);
     }
