@@ -3,6 +3,9 @@ package StringZeroToHero;
 public class ValidParenthesis {
     public static boolean validParen(String s){
         while(true){
+            if(s.contains("()")){
+                s=s.replace("()","");
+            }
 
         }
 
