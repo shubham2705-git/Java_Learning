@@ -9,6 +9,9 @@ public class ValidParenthesis {
             else if(s.contains("{}")){
                 s=s.replace("{}","")
             }
+            else if(s.contains("[]")){
+                s=s.replace("[]","");
+            }
 
         }
 
