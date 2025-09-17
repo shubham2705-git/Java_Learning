@@ -24,6 +24,7 @@ public class LLCreation{
         }
         return head;
     }
+    // ===================================================================================================
 //    public static int lengthOfLL(Node head){
 //        int cnt = 0;
 //        Node temp = head;
@@ -34,14 +35,15 @@ public class LLCreation{
 //        }
 //        return cnt;
 //    }
-    public static boolean checkIfPresent(Node head, int val){
-        Node temp = head;
-        while(temp!=null){
-            if(temp.data == val) return true;
-            temp = temp.next;
-        }
-        return  false;
-    }
+    // ==========================================================================
+//    public static boolean checkIfPresent(Node head, int val){
+//        Node temp = head;
+//        while(temp!=null){
+//            if(temp.data == val) return true;
+//            temp = temp.next;
+//        }
+//        return  false;
+//    }
     public static void main(String[] args) {
         int[] arr = {2,5,6,8};
         Node head = convertArr2LL(arr);
