@@ -24,15 +24,23 @@ public class LLCreation{
         }
         return head;
     }
-    public static int lengthOfLL(Node head){
-        int cnt = 0;
+//    public static int lengthOfLL(Node head){
+//        int cnt = 0;
+//        Node temp = head;
+//        while(temp!=null){
+//            System.out.println(temp.data+" ");
+//            temp = temp.next;
+//            cnt++;
+//        }
+//        return cnt;
+//    }
+    public static boolean checkIfPresent(Node head, int val){
         Node temp = head;
         while(temp!=null){
-            System.out.println(temp.data+" ");
+            if(temp.data == val) return true;
             temp = temp.next;
-            cnt++;
         }
-        return cnt;
+        return  false;
     }
     public static void main(String[] args) {
         int[] arr = {2,5,6,8};
@@ -42,6 +50,7 @@ public class LLCreation{
 //            System.out.println(temp.data+" ");
 //            temp = temp.next;
 //        }
-        System.out.println("length of LL is: "+ lengthOfLL(head));
+//        System.out.println("length of LL is: "+ lengthOfLL(head));
+        System.out.println(checkIfPresent(head,arr[1]));
     }
 }
