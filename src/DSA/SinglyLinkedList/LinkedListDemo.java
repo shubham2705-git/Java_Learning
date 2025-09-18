@@ -26,20 +26,10 @@ public class LinkedListDemo{
         }
         return head;
     }
-    public static Node findMiddle(Node head){
-        Node slow = head;
-        Node fast = head;
-        while(fast!=null && fast.next!=null){
-            slow = slow.next;
-            fast = fast.next.next;
-        }
-        return slow;
-    }
+
     public static void main(String[] args) {
         int[] arr = {2,4,5,6,8};
         Node head = convertArr2LL(arr);
-        Node middleNode = findMiddle(head);
-        System.out.println("middle Node is:" + middleNode.data);
     }
 }
 
@@ -75,3 +65,13 @@ public class LinkedListDemo{
 //        }
 //        return  false;
 //    }
+// ==================== FIND MIDDLE ELEMENT ============================
+//public static Node findMiddle(Node head){
+//    Node slow = head;
+//    Node fast = head;
+//    while(fast!=null && fast.next!=null){
+//        slow = slow.next;
+//        fast = fast.next.next;
+//    }
+//    return slow;
+//}
