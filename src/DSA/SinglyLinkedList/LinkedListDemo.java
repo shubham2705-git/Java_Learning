@@ -27,9 +27,22 @@ public class LinkedListDemo{
         return head;
     }
 
+    public static Node reverseList(Node head) {
+        Node prev = null;
+        Node temp = head;
+        while (temp != null) {
+            Node front = temp.next;
+            temp.next = prev;
+            prev = temp;
+            temp = front;
+        }
+        return prev;
+    }
     public static void main(String[] args) {
         int[] arr = {2,4,5,6,8};
         Node head = convertArr2LL(arr);
+        Node newHead = reverseList(head);
+        System.out.println(newHead.data);
     }
 }
 
