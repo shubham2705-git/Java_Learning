@@ -36,7 +36,7 @@ public class LinkedListDemo{
             prev = temp;
             temp = front;
         }
-            return prev;
+             return prev;
     }
     public static void main(String[] args) {
         int[] arr = {2,4,5,6,8};
