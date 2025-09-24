@@ -14,7 +14,6 @@ public class SpiralMatrix {
         int count=0;
         List<Integer> ans=new ArrayList<>();
 
-
         while (count < total) {
             for (int i = left; i <= right && count < total; i++) {
                 ans.add(matrix[top][i]);
