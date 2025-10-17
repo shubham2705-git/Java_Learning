@@ -11,5 +11,6 @@ public class CheckPalindrome {
         int i = 0;
         boolean result = checkPalindrome(str,i);
         System.out.println(result);
+        System.out.println(result);
     }
 }
