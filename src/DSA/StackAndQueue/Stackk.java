@@ -1,10 +1,10 @@
 package StackAndQueue;
 
-public class Stack {
+public class Stackk {
     private int[] arr;
     private int top;
     private int capacity;
-    public Stack(int size){
+    public Stackk(int size){
         arr = new int[size];
         capacity = size;
         top = -1;
@@ -41,7 +41,7 @@ public class Stack {
         return top+1;
     }
     public static void main(String[] args) {
-        Stack stack = new Stack(5);
+        Stackk stack = new Stackk(5);
         stack.push(10);
         stack.push(20);
         stack.push(30);
