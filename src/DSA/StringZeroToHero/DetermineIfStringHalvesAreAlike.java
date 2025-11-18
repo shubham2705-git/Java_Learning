@@ -1,12 +1,10 @@
 package StringZeroToHero;
 
 public interface DetermineIfStringHalvesAreAlike {
-    public static boolean isVowel(char ch){
+     static boolean isVowel(char ch){
         return "aeiouAEIOU".indexOf(ch)!=-1;
     }
-    public static boolean isAlike(String s){
-        int right = s.length()-1;
-        int left = 0;
+     static boolean isAlike(String s){
         int value = 0;
         for(int i=0;i<s.length()/2;i++){
             if(isVowel(s.charAt(i))){
@@ -20,7 +18,7 @@ public interface DetermineIfStringHalvesAreAlike {
         }
         return value==0;
     }
-    public static void main(String[] args) {
+     static void main(String[] args) {
         String s = "book";
         System.out.println(isAlike(s));
     }
