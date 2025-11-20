@@ -17,6 +17,8 @@ public class RepeatedSubstringPattern {
                 }
             }
             return false;
+            // on line solution
+            // return ((s + s).substring(1, 2 * s.length() - 1).contains(s));
     }
     public static void main(String[] args) {
         String str="abcabcabcabc";
