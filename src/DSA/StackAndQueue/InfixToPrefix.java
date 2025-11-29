@@ -22,9 +22,6 @@ public class InfixToPrefix {
         while(i < reversed.length()){
             char ch = reversed.charAt(i);
 
-            // skip whitespace
-          //  if (Character.isWhitespace(ch)) { i++; continue; }
-
             if(Character.isLetterOrDigit(ch)){
                 ans.append(ch);
             }
@@ -40,7 +37,6 @@ public class InfixToPrefix {
                 }
             }
             else{
-                // <<-- NOTE THE CHANGE HERE: equality case uses ch == '^' (flipped)
                 while (!st.isEmpty() &&
                         (priority(ch) < priority(st.peek()) ||
                                 (priority(ch) == priority(st.peek()) && ch == '^')))
