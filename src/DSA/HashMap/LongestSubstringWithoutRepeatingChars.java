@@ -1,7 +1,7 @@
 package HashMap;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class LongestSubstringWithoutRepeatingChars {
     public static int result(String s){
@@ -20,11 +20,11 @@ public class LongestSubstringWithoutRepeatingChars {
 //        return maxLen;
         int max=0;
         for(int i=0;i<s.length();i++){
-            List<Character> list = new ArrayList<>();
+            Set<Character> set = new HashSet<>();
             for(int j=i;j<s.length();j++){
-                if(list.contains(s.charAt(j))) break;
-                list.add(s.charAt(j));
-                max=Math.max(max,list.size());
+                if(set.contains(s.charAt(j))) break;
+                set.add(s.charAt(j));
+                max=Math.max(max,set.size());
             }
         }
         return max;
