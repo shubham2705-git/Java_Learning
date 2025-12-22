@@ -1,10 +1,10 @@
-package StringZeroToHero;
+package CognizantQuestions;
 
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-public class Conizant1 {
+public class Cognizant1 {
     public static int solution(int k, String s1, String s2){
         Set<String> uniqueSubstrings = new HashSet<>();
         int count = 0;

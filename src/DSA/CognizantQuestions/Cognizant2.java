@@ -1,4 +1,4 @@
-package StringZeroToHero;
+package CognizantQuestions;
 
 import java.util.HashMap;
 import java.util.Map;
