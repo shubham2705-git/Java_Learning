@@ -11,6 +11,17 @@ public class CreateLinkedList {
             this.next = null;
         }
     }
+    static Node createList() {
+        Node head = new Node(1);
+        Node temp = head;
+
+        for (int i = 2; i <= 7; i++) {
+            temp.next = new Node(i);
+            temp = temp.next;
+        }
+        return head;
+    }
+
     static void printList(Node head) {
         Node curr = head;
         while (curr != null) {
@@ -68,19 +79,19 @@ public class CreateLinkedList {
         printList(head);
         System.out.println("------------------------------------");
 
-        Node first = deleteHead(head);
+        Node first = createList();
         System.out.println("After deleting head:");
-        printList(first);
+        printList(deleteHead(first));
         System.out.println("------------------------------------");
 
-        Node second=deleteTail(head);
+        Node second=createList();
         System.out.println("After deleting tail");
-        printList(second);
+        printList(deleteTail(second));
         System.out.println("------------------------------------");
 
-        Node third = deleteKthElement(head,3);
+        Node third = createList();
         System.out.println("After deleting kth Element");
-        printList(third);
+        printList(deleteKthElement(third,1));
         System.out.println("------------------------------------");
     }
 
