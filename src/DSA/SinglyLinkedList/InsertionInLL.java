@@ -32,8 +32,17 @@ public class InsertionInLL {
         }
         System.out.println("null");
     }
-    static Node insertHead(Node head, int val){
+    static Node insertAtHead(Node head, int val){
         return new Node(val,head);
+    }
+    static Node insertAtTail(Node head,int val){
+        if(head==null) return new Node(val);
+        Node temp = head;
+        while(temp.next!=null){
+            temp = temp.next;
+        }
+        temp.next = new Node(val);
+        return head;
     }
 
     public static void main(String[] args) {
@@ -41,7 +50,12 @@ public class InsertionInLL {
         print(head1);
         System.out.println("----------------------------------");
 
+        System.out.println("After inserting at head");
         Node head2 = createList();
-        print(insertHead(head2,15));
+        print(insertAtHead(head2,15));
+
+        System.out.println("After insertingg at tail");
+        Node head3 = createList();
+        print(insertAtTail(head3,17));
     }
 }
