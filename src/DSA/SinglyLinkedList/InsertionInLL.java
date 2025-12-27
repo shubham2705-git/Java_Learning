@@ -9,6 +9,10 @@ public class InsertionInLL {
             this.data = data;
             this.next = null;
         }
+        Node(int data,Node next){
+            this.data = data;
+            this.next = next;
+        }
     }
     static Node createList(){
         int[] arr = {4,3,6,5,2};
@@ -28,10 +32,16 @@ public class InsertionInLL {
         }
         System.out.println("null");
     }
+    static Node insertHead(Node head, int val){
+        return new Node(val,head);
+    }
 
     public static void main(String[] args) {
         Node head1 = createList();
-        System.out.println();
         print(head1);
+        System.out.println("----------------------------------");
+
+        Node head2 = createList();
+        print(insertHead(head2,15));
     }
 }
