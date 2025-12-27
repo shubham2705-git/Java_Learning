@@ -1,6 +1,6 @@
 package SinglyLinkedList;
 
-public class CreateLinkedList {
+public class CreateAndDeletionOfLL {
 
     static class Node {
         int data;
@@ -12,11 +12,13 @@ public class CreateLinkedList {
         }
     }
     static Node createList() {
-        Node head = new Node(1);
+        int[] values = {3, 2, 4, 6, 5};
+
+        Node head = new Node(values[0]);
         Node temp = head;
 
-        for (int i = 2; i <= 7; i++) {
-            temp.next = new Node(i);
+        for (int i = 1; i < values.length; i++) {
+            temp.next = new Node(values[i]);
             temp = temp.next;
         }
         return head;
@@ -65,18 +67,30 @@ public class CreateLinkedList {
         return head;
     }
 
+    static Node deleteEle(Node head,int element){
+        if(head==null) return null;
+        if(head.data==element){
+            return head.next;
+        }
+        Node temp = head;
+        Node prev = null;
+        while(temp!=null){
+            if(temp.data==element){
+                prev.next = prev.next.next;
+                break;
+            }
+            prev = temp;
+            temp = temp.next;
+        }
+        return head;
+    }
+
 
 
     public static void main(String[] args) {
-        Node head = new Node(1);
-        Node temp = head;
 
-        for(int i=2; i<=7; i++){
-            temp.next = new Node(i);
-            temp = temp.next;
-        }
         System.out.println("Before deleting head:");
-        printList(head);
+        printList(createList());
         System.out.println("------------------------------------");
 
         Node first = createList();
@@ -92,6 +106,11 @@ public class CreateLinkedList {
         Node third = createList();
         System.out.println("After deleting kth Element");
         printList(deleteKthElement(third,1));
+        System.out.println("------------------------------------");
+
+        Node fourth = createList();
+        System.out.println("After deleting Element");
+        printList(deleteEle(fourth,2));
         System.out.println("------------------------------------");
     }
 
