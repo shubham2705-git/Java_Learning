@@ -54,8 +54,7 @@ public class InsertionInLL {
         while(temp!=null){
             count++;
             if(count==k-1){
-                Node x = new Node(val);
-                x.next = temp.next;
+                Node x = new Node(val,temp.next);
                 temp.next = x;
                 break;
             }
