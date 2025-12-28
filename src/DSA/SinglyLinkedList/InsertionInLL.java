@@ -44,6 +44,25 @@ public class InsertionInLL {
         temp.next = new Node(val);
         return head;
     }
+    static Node insertAtKthPlace(Node head,int k, int val){
+        if(head==null) return head;
+        if(k==1){
+            return new Node(val,head);
+        }
+        int count = 0;
+        Node temp = head;
+        while(temp!=null){
+            count++;
+            if(count==k-1){
+                Node x = new Node(val);
+                x.next = temp.next;
+                temp.next = x;
+                break;
+            }
+            temp = temp.next;
+        }
+        return head;
+    }
 
     public static void main(String[] args) {
         Node head1 = createList();
@@ -57,5 +76,9 @@ public class InsertionInLL {
         System.out.println("After insertingg at tail");
         Node head3 = createList();
         print(insertAtTail(head3,17));
+
+        System.out.println("After inserting at Kth Place");
+        Node head4 = createList();
+        print(insertAtKthPlace(head4,5,88));
     }
 }
