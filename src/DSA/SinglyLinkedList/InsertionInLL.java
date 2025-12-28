@@ -62,6 +62,22 @@ public class InsertionInLL {
         }
         return head;
     }
+    static Node insertBeforeValue(Node head,int val,int ele){
+        if(head==null) return head;
+        if(head.data==val){
+            return new Node(val,head);
+        }
+        Node temp = head;
+        while(temp.next!=null){
+            if(temp.next.data==val){
+                Node x = new Node(ele,temp.next);
+                temp.next = x;
+                break;
+            }
+            temp = temp.next;
+        }
+        return head;
+    }
 
     public static void main(String[] args) {
         Node head1 = createList();
@@ -79,5 +95,9 @@ public class InsertionInLL {
         System.out.println("After inserting at Kth Place");
         Node head4 = createList();
         print(insertAtKthPlace(head4,5,88));
+
+        System.out.println("After inserting at before the given value");
+        Node head5 = createList();
+        print(insertBeforeValue(head5,5,90));
     }
 }
