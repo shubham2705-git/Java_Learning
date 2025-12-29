@@ -94,7 +94,7 @@ public class InsertionInLL {
 
         System.out.println("After inserting at Kth Place");
         Node head4 = createList();
-        print(insertAtKthPlace(head4,5,88));
+        print(insertAtKthPlace(head4,6,88));
 
         System.out.println("After inserting at before the given value");
         Node head5 = createList();
