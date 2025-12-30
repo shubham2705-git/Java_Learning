@@ -1,5 +1,6 @@
 package SinglyLinkedList;
-
+// Find Middle of linkedList
+// Reverse a linkedList
 public class MediumLevelQuestions {
     static class Node{
         int data;
@@ -15,7 +16,7 @@ public class MediumLevelQuestions {
         }
     }
     static Node createList(){
-        int[] arr = {4,3,6,5,0,8};
+        int[] arr = {4,3,6,2,8};
         Node head = new Node(arr[0]);
         Node temp = head;
         for(int i=1; i<arr.length; i++){
@@ -34,21 +35,22 @@ public class MediumLevelQuestions {
     }
     static int middleEle(Node head){
         if(head==null) return -1;
-        Node temp = head;
-        int count=0;
-        while(temp!=null){
-            count++;
-            temp = temp.next;
+        Node slow = head;
+        Node fast = head;
+        while(fast!=null && fast.next!=null){
+            slow = slow.next;
+            fast = fast.next.next;
         }
-        count = count/2+1;
-        Node temp2 = head;
-        int con = 0;
-        while(con!=count)
-        {
-            con++;
-            temp2=temp2.next;
-        }
-        return temp2.data;
+        return slow.data;
+    }
+    static Node reverseLL(Node head){
+        if(head==null || head.next==null) return head;
+
+        Node newHead = reverseLL(head.next);
+        Node front = head.next;
+        front.next = head;
+        head.next = null;
+        return newHead;
     }
 
 
@@ -62,6 +64,9 @@ public class MediumLevelQuestions {
         int result = middleEle(head2);
         System.out.println(result);
 
+        System.out.println("After reversing a linkedlist");
+        Node head3 = createList();
+        print(reverseLL(head3));
 
     }
 }
