@@ -18,9 +18,9 @@ public class Ncr {
         }
     }
     public static void main(String[] args) {
-        int n = 5;
+        int n = 4;
         int r = 3;
-        int result = findNcr(n,r);
+        int result = findNcr(n-1,r-1);
         System.out.println(result);
         printRow(n);
     }
