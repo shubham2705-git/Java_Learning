@@ -21,7 +21,9 @@ public class Ncr {
         int n = 4;
         int r = 3;
         int result = findNcr(n-1,r-1);
+        System.out.println("printing given index value");
         System.out.println(result);
+        System.out.println("printing row");
         printRow(n);
     }
 }
