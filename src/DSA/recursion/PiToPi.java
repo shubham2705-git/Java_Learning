@@ -11,7 +11,7 @@ public class PiToPi {
         return str.charAt(0)+pi(str.substring(1));
     }
     public static void main(String[] args) {
-        String str = "23kpikkpi";
+        String str = "23pi23pi";
         System.out.println(pi(str));
     }
 }
