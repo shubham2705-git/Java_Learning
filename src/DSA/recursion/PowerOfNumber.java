@@ -8,6 +8,8 @@ public class PowerOfNumber {
         return res;
     }
     public static void main(String[] args) {
-        System.out.println(power(2,5));
+        int n=2;
+        int m=5;
+        System.out.println(power(n,m));
     }
 }
