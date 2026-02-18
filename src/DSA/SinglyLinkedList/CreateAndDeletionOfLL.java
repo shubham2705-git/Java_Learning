@@ -11,6 +11,7 @@ public class CreateAndDeletionOfLL {
             this.next = null;
         }
     }
+
     static Node createList() {
         int[] values = {3, 2, 4, 6, 5};
 
@@ -32,6 +33,7 @@ public class CreateAndDeletionOfLL {
         }
         System.out.println("null");
     }
+
     static Node deleteHead(Node head) {
         if (head == null) return null;
         return head.next;
