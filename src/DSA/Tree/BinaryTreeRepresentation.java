@@ -9,8 +9,6 @@ public class BinaryTreeRepresentation {
 
         Node(int data) {
             this.data = data;
-            this.left = null;
-            this.right = null;
         }
     }
 
