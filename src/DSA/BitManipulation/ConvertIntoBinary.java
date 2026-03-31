@@ -12,7 +12,7 @@ public class ConvertIntoBinary {
         return res.reverse().toString();
     }
     public static void main(String[] args) {
-        String result = convert2Binary(0);
+        String result = convert2Binary(10);
         System.out.println(result);
     }
 }
