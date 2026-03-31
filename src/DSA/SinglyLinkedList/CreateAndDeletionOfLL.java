@@ -107,7 +107,7 @@ public class CreateAndDeletionOfLL {
 
         Node third = createList();
         System.out.println("After deleting kth Element");
-        printList(deleteKthElement(third,1));
+        printList(deleteKthElement(third,3));
         System.out.println("------------------------------------");
 
         Node fourth = createList();
