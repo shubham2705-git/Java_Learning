@@ -5,20 +5,13 @@ import java.util.Arrays;
 public class MoveAllZeroesToEnd {
     public static int[] moveAllZeroes(int[] arr){
 // =========== Optimal Solution ============
-        int n = arr.length;
-        int j = -1;
-        for(int i=0;i<n;i++){
-            if(arr[i]==0){
-                j=i;
-                break;
-            }
-        }
-        if (j == -1) return arr;
-        for(int i=j+1; i<n; i++){   //--- TC -> O(n)
+        int j = 0;  // position to place next non-zero
+
+        for(int i = 0; i < arr.length; i++){
             if(arr[i] != 0){
-                 int temp = arr[i];
-                 arr[i] = arr[j];
-                 arr[j] = temp;
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
                 j++;
             }
         }
