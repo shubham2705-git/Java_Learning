@@ -1,27 +1,28 @@
 package ArrayMediumLevel;
 
+import java.util.HashSet;
 import java.util.Set;
-import java.util.TreeSet;
 
 public class LongestConsecutiveSequence {
     public static int longest(int[] nums){
-        Set<Integer> set = new TreeSet<>();
+        Set<Integer> set = new HashSet<>();
         for (int num : nums) {
             set.add(num);
         }
-        int count = 1;
-        int maxi = 0;
-        for(int i: set){
-            if(set.contains(i+1)){
-                count++;
-            }
-            else{
-                count=1;
-            }
-            maxi = Math.max(count,maxi);
+        int max = 0;
+        for(int i : set){
+            if(!set.contains(i-1)){
+                int curnum = i;
+                int count=1;
 
+                while(set.contains(curnum+1)){
+                    count++;
+                    curnum++;
+                }
+                max = Math.max(count,max);
+            }
         }
-        return maxi;
+        return max;
     }
     public static void main(String[] args) {
         int[] nums = {0,3,7,2,5,8,4,6,0,1};
