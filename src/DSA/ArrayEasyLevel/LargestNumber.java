@@ -1,16 +1,15 @@
 package ArrayEasyLevel;
 
-import java.util.Scanner;
-import java.util.Arrays;
+
 public class LargestNumber {
-    public static int largestElement(int arr[])
+    public static int largestElement(int[] arr)
     {
         int largest = 0;
-        for(int i=0;i<arr.length;i++)
+        for(int i:arr)
         {
-            if(arr[i]>largest)
+            if(i>largest)
             {
-                largest = arr[i];
+                largest = i;
             }
         }
         return largest;
@@ -26,7 +25,7 @@ public class LargestNumber {
         Arrays.sort(arr);
         System.out.println(arr[n-1]); */
 
-        int arr[] = {21,34,34,53,7,35,39,25,65,65};
+        int[] arr = {21,34,34,53,7,35,39,25,65,65};
         int result = largestElement(arr);
         System.out.println(result);
     }
