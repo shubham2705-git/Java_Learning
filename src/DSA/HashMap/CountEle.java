@@ -1,8 +1,6 @@
 package HashMap;
 
 
-import java.util.*;
-
 public class CountEle {
     public static void find(int n){
         if((n&1) ==1){
