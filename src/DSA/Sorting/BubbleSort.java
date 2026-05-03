@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class BubbleSort {
     public static void bubbleSort(int[] arr){
-        for(int i=arr.length-1;i>=1;i--){
+        for(int i=0;i<arr.length-1;i++){
             int didSwap = 0;
-            for(int j=0;j<i;j++){
+            for(int j=0;j<arr.length-i-1;j++){
                 if(arr[j]>arr[j+1]){
                     int temp =arr[j];
                     arr[j]=arr[j+1];
@@ -19,7 +19,7 @@ public class BubbleSort {
         System.out.println(Arrays.toString(arr));
     }
     public static void main(String[] args) {
-        int[] arr = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+        int[] arr = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1,10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
         bubbleSort(arr);
     }
 }
