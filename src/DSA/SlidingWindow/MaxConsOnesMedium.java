@@ -12,10 +12,7 @@ public class MaxConsOnesMedium {
                 }
                 l++;
             }
-
-            if(zeroes<=k){
-                max = Math.max(max,r-l+1);
-            }
+            max = Math.max(max,r-l+1);
             r++;
         }
         return max;
