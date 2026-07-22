@@ -18,7 +18,7 @@ public class UpperBound {
     }
     public static void main(String[] args) {
         int[] arr = {2,3,4,5,6,7,12,15,23};
-        int target = 12;
+        int target = 11;
         System.out.println(upperBound(arr,target));
     }
 }
