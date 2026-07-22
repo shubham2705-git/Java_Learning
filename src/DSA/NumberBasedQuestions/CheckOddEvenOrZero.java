@@ -13,7 +13,7 @@ public class CheckOddEvenOrZero {
         }
     }
     public static void main(String[] args) {
-        int num = 22;
+        int num = 212;
         check(num);
     }
 }
