@@ -3,7 +3,7 @@ package ArrayEasyLevel;
 import java.util.Scanner;
 import java.util.Arrays;
 public class SecondLargestElement {
-    public static int SecondLargest(int arr[],int n)
+    public static int SecondLargest(int[] arr,int n)
     {
         //========= First approach  ============
   /*        int secondLargest = -1;
@@ -54,7 +54,7 @@ public class SecondLargestElement {
         return second;
     }
     public static void main(String[] args) {
-        int arr[] = {21,74,-34,5,7,35,-39,25,-65,-65,65,-65};
+        int[] arr = {21,74,-34,5,7,35,-39,25,-65,-65,65,-65};
         int n = arr.length-1;
         int result = SecondLargest(arr,n);
         System.out.println(result);
