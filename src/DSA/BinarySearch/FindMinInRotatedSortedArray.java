@@ -5,7 +5,7 @@ public class FindMinInRotatedSortedArray {
         int l = 0;
         int r = arr.length-1;
         int min = Integer.MAX_VALUE;
-        int mid = 0;
+        int mid;
         while(l <= r){
             mid = l + (r-l)/2;
             if(arr[l] <= arr[mid]){
