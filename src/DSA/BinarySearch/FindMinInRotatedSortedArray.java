@@ -7,6 +7,10 @@ public class FindMinInRotatedSortedArray {
         int min = Integer.MAX_VALUE;
         while(l <= r){
             int mid = l + (r-l)/2;
+            if(arr[l] <= arr[r]){
+                min = Math.min(arr[l],min);
+                break;
+            }
             if(arr[l] <= arr[mid]){
                 min = Math.min(arr[l], min);
                 l = mid+1;
