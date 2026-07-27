@@ -3,10 +3,10 @@ package BinarySearch;
 import java.util.Arrays;
 
 public class KokoEatBananas {
-    private static int calculateTotalHours(int[] piles, int speed) {
-        int totalH = 0;
+    private static long calculateTotalHours(int[] piles, int speed) {
+        long totalH = 0;
         for (int bananas : piles) {
-            totalH += (int)Math.ceil((double)bananas / speed);
+            totalH += (long)Math.ceil((double)bananas / speed);
         }
         return totalH;
     }
@@ -18,7 +18,7 @@ public class KokoEatBananas {
 
         while(low <= high){
             int mid = (low + high)/2;
-            int totalH = calculateTotalHours(arr, mid);
+            long totalH = calculateTotalHours(arr, mid);
 
             if (totalH <= h) {
                 ans = mid;
@@ -32,7 +32,7 @@ public class KokoEatBananas {
     }
     public static void main(String[] args) {
         int[] arr = {30,11,23,4,20};
-        int h = 5;
+        int h = 6;
         System.out.println(find(arr,h));
     }
 }
