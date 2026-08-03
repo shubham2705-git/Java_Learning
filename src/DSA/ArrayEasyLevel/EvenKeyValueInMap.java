@@ -8,8 +8,7 @@ public class EvenKeyValueInMap {
         for(int i =0; i<arr.length;i++){
             map.put(arr[i],map.getOrDefault(arr[i],0)+1);
         }
-        int count1 = 0;
-        int count2 = 0;
+
         List<Integer> list1 = new ArrayList<>();
         List<Integer> list2 = new ArrayList<>();
         for(Map.Entry<Integer, Integer> e:map.entrySet()){
