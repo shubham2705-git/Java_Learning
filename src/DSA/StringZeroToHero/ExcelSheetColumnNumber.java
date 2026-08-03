@@ -10,7 +10,7 @@ public class ExcelSheetColumnNumber {
         return ans;
     }
     public static void main(String[] args) {
-        String s = "ZY"; // 701
+        String s = "AZY"; // 701
         System.out.println(find(s));
     }
 }
