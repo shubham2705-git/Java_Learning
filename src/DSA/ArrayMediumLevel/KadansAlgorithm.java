@@ -12,7 +12,7 @@ public class KadansAlgorithm {
         return max;
     }
     public static void main(String[] args) {
-        int[] arr = {5,4,-1,7,8};
+        int[] arr = {5,4,-1,7,-2,4,-18};
         int result = maxSubarray(arr);
         System.out.println(result);
     }
