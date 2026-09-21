@@ -12,8 +12,7 @@ public class NearestPrimeNumber {
         if(isPrime(n)){
             return n;
         }
-        int l = n-1 ;
-        int h = n+1;
+        int l = n-1, h = n+1;
         while(l>1){
             if(isPrime(l)){
                 return l;
