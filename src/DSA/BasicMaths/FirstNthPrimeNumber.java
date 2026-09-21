@@ -9,8 +9,7 @@ public class FirstNthPrimeNumber {
         return true;
     }
     public static void find(int n){
-        int i = 1;
-        int count = 0;
+        int i = 1, count = 0;
         while(count!=n){
             if(isPrime(i)) count++;
             if(count==n) {
