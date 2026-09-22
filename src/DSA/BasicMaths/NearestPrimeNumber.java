@@ -8,26 +8,24 @@ public class NearestPrimeNumber {
         }
         return true;
     }
-    public static int find(int n){
-        if(isPrime(n)){
-            return n;
-        }
+    public static void find(int n){
+
         int l = n-1, h = n+1;
         while(l>1){
             if(isPrime(l)){
-                return l;
+                System.out.println(l);
+                break;
             }
             else if(isPrime(h)){
-                return h;
-            }else{
+                System.out.println(h);
+                break;
+            }
                 l--;
                 h++;
-            }
         }
-        return 1;
     }
     public static void main(String[] args) {
         int  n = 29;
-        System.out.println(find(n));
+        find(n);
     }
 }
