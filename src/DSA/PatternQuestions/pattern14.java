@@ -9,7 +9,7 @@ public class pattern14 {
                     System.out.print((char)(j+64)+" ");
                 else
                     System.out.print((char)(j+96)+" ");
-            }
+             }
             System.out.println();
         }
     }
