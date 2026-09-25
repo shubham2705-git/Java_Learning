@@ -16,6 +16,7 @@ public class BinarySubarraysWithSum {
         return count;
     }
     public static int numSubarraysWithSum(int[] nums, int goal) {
+
         return find(nums,goal) - find(nums,goal-1);
     }
     public static void main(String[] args) {
