@@ -9,7 +9,7 @@ public class AddNumbersOfString {
             if(Character.isDigit(ch)){
                 str+=ch;
             }
-            if((Character.isLetter(ch) && !str.equals("")) || (Character.isDigit(ch) && i == s.length()-1)){
+            if((Character.isLetter(ch) && !str.isEmpty()) || (Character.isDigit(ch) && i == s.length()-1)){
                 sum = sum + Integer.parseInt(str);
                 str="";
             }
