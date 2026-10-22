@@ -2,9 +2,9 @@ package ArrayEasyLevel;
 
 public class CountFreqOfElements {
     public static void countFreq(int[] arr){
-        boolean freq[] = new boolean[arr.length];
+        boolean[] freq = new boolean[arr.length];
         for(int i=0;i<arr.length;i++){
-            if(freq[i]==false){
+            if(!freq[i]){
                 int count=1;
                 for(int j=i+1;j<arr.length;j++){
                     if(arr[i]==arr[j]){
