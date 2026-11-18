@@ -12,10 +12,12 @@ public class LongestWord {
             if(ch==' ') sb=new StringBuilder();
             if(ans.length()<sb.length()) ans = sb.toString();
         }
+        if(ans.length()<sb.length()) ans = sb.toString();
+
         return ans;
     }
     public static void main(String[] args) {
-        String s = "This is the largest";
+        String s = "This is the larjj";
         System.out.println(longest(s));
     }
 }
